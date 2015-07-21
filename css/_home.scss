@@ -1,0 +1,44 @@
+@import "_variables.scss";
+.home-page {
+
+	h1, h2, h3 {
+		color:$primary-text-color;
+		font-weight:bold;
+	}
+
+	#carousel {
+		border:1px solid $wireframe-border-color;
+		margin-bottom:20px;
+	} // end #carousel
+
+	.carousel-caption {
+		h3{color:$primary-text-color;}
+		
+	}
+
+	.carousel-indicators li {
+		background-color: $wireframe-color;
+		border: 1px solid $wireframe-border-color;
+	} // end .carousel-indicators
+
+	.friendly-message {
+		h3 {color:$primary-color-dark;}
+		background-color:$primary-color-light;
+		border-radius:25px;
+		color:$primary-color;
+		margin-top:20px;
+		padding:10px;
+	} // end .friendly-message
+	
+	.panel-default {
+		-webkit-border-radius:25px;
+		border-radius:25px;
+		.panel-heading {
+		background-color:$primary-color-dark;
+		border-radius:10px 10px 0 0;
+		color:#f3f3f3;
+		padding:10px;
+		h2 {color:#f3f3f3;font-weight:normal;margin:0;}
+	} // end .panel-heading
+	} // end .panel-default
+} //end .home-page

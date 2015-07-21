@@ -1,0 +1,31 @@
+@import "_variables.scss";
+.navigation {
+
+	.jumbotron {background-color: #fff;padding: 0 0 0 0;margin: 0 0 0 0;
+		h1 {font-size: 30px;}
+		img {margin:10px;}
+	} // end .jumbotron
+
+	#jumboText {
+		color: $primary-text-color;
+	} // end #jumboText
+
+	.navbar-default {
+		border-radius:0; 
+		background-color:$primary-color-dark;
+			.navbar-nav>li>a {color:#fff; font-weight:bold;}
+			.navbar-nav>li>a:hover, .navbar-nav>li>a:focus{background-color:$primary-color-light;color:$primary-color-dark;}
+			.navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus {background-color:$primary-color-light;color:$primary-color-dark;}
+		.dropdown-menu{
+			background-color:$primary-color-light;
+			border-radius:0;
+			border:0;
+			padding:5px;
+			margin:0;
+			li {
+				a {color:$primary-color-dark; font-weight:bold;}
+					a:hover{background-color:$primary-color-light;color:$primary-color;}
+			} // end li
+		} // end .dropdown-menu
+	} // end .navbar-default
+} // end .navigation
