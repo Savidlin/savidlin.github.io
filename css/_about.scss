@@ -1,14 +1,13 @@
+@import "_variables.scss";
 .about {
 	.row:nth-child(2) {
 		margin-top: 10px;
-	} // end .row:nth-child
-
+	}
 	.img-responsive {
 		display: inline;
-	} // end .img-responsive
-
+	}
 	.page-header-bg {
-		background-color: $pageHeaderColor;
+		background-color: $secondary-color;
 		padding: 10px 0 10px 0;
-	} // end .page-header-bg
-} // end .about
+	}
+}
