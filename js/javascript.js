@@ -10,14 +10,14 @@ $(document).ready(function() {
                         "I come all the way from Orlando.  Best vet I've been to.  Recommended to all my friends.", 
                         "Dr. Wayne and staff are great. Our three dogs get super care. Very polite and caring."];
     var testimonialNames = ["Tracy W.","Christopher B.","Ray Mikler"];
-    var testimonialImages = [ "../images/test1Image.jpg","../images/test2Image.jpg","../images/test3Image.jpg"];
-
-    setInterval(function() {testSwap()}, 10000);
+    var testimonialImages = [ "/images/test1Image.jpg","/images/test2Image.jpg","/images/test3Image.jpg"];
 
     // initially set the content of the testimonial elements to index 0
     $('.testimonialText').text(testimonials[currentTest]);
     $('.testimonialName').text(testimonialNames[currentTest]);
     $('.testimonialImage').attr("src",testimonialImages[currentTest]);
+
+    setInterval(function() {testSwap()}, 10000);
 
     // function for when user clicks the right arrow
     $('#rightButton').click(function(){
@@ -51,20 +51,20 @@ $(document).ready(function() {
     	// display changed testimonials
     	$('.testimonialText').text(testimonials[currentTest]);
     	$('.testimonialName').text(testimonialNames[currentTest]);
-        $( '.testimonialImage' ).attr("src",testimonialImages[currentTest]);
+        $('.testimonialImage').attr("src",testimonialImages[currentTest]);
     });
 
     function testSwap() {
         if ( currentTest != 2 ) {
             currentTest++;
             $( '.testimonialText').text(testimonials[currentTest]);
-            $( '.testmonialName' ).text(testimonialNames[currentTest]);
+            $( '.testimonialName' ).text(testimonialNames[currentTest]);
             $( '.testimonialImage' ).attr("src",testimonialImages[currentTest]);
         }
         else {
             currentTest = 0;
             $( '.testimonialText').text(testimonials[currentTest]);
-            $( '.testmonialName' ).text(testimonialNames[currentTest]);
+            $( '.testimonialName' ).text(testimonialNames[currentTest]);
             $( '.testimonialImage' ).attr("src",testimonialImages[currentTest]);
         }
     }
